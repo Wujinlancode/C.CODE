@@ -2,18 +2,28 @@
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
-fun 
+void fun(char s[],int n)
 {
-	int x; struct tt* y; 
+	int i; char a[80],*p;
+	p = s;
+	for (i = 0; i < n; i++)
+		a[i] = '*';
+	do
+	{
+		a[i] = *p;
+		i++;
+	} while (*(p++));
+		a[i] = 0;
+	strcpy(s, a);
 }
-*p;
-struct tt a[4] = { 20,a + 1,15,a + 2,30,a + 3,17,a };
 main()
 {
-	int i;
-	p = a;
-	for (i = 1; i <= 2; i++)
-	{
-		printf("%d\n", p->x); p = p->y;
-	}
+	int n; char s[80]; 
+	printf("\nEnter a string:");
+	gets(s);
+	printf("\nThe string\"%s\"\n",s);
+	printf("\nEnter n (number of*):");
+	scanf("%d", &n);
+	fun(s, n);
+		printf("\nThe string after insert:\"%s\"\n", s);
 }

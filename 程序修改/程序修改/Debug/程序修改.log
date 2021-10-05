@@ -1,2 +1,3 @@
 ﻿  程序修改测试.c
+D:\CODE Github\代码库\C.CODE\程序修改\程序修改\程序修改测试.c(23,6): warning C4013: “gets”未定义；假设外部返回 int
   程序修改.vcxproj -> D:\CODE Github\代码库\C.CODE\程序修改\Debug\程序修改.exe
